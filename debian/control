@@ -1,0 +1,15 @@
+Source: netdata
+Section: misc
+Priority: optional
+Maintainer: Emilien Mantel <emilie.mantel@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), gcc, make, git, autoconf, autogen, automake, pkg-config
+Standards-Version: 3.9.4
+Homepage: http://netdata.firehol.org/
+#Vcs-Git: git://git.debian.org/collab-maint/netdata.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/netdata.git;a=summary
+
+Package: netdata
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Real-time performance monitoring over HTTP 
+ Netdata is a highly optimized Linux daemon providing real-time performance monitoring for Linux systems, Applications, SNMP devices, over the web
